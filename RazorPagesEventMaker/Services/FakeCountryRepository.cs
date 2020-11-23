@@ -21,7 +21,7 @@ namespace RazorPagesEventMaker.Services
 
         public List<Country> GetAllCountries()
         {
-            throw new NotImplementedException();
+            return countries;
         }
 
         public string GetCountryName(string code)

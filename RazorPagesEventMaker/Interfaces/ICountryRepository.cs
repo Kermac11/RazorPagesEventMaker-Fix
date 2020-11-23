@@ -6,7 +6,7 @@ using RazorPagesEventMaker.Models;
 
 namespace RazorPagesEventMaker.Interfaces
 {
-    interface ICountryRepository
+   public interface ICountryRepository
     {
         List<Country> GetAllCountries();
         public string GetCountryName(string code);

@@ -12,46 +12,26 @@ namespace RazorPagesEventMaker.Services
 
         public FakeEventRepository()
         {
+            _events = new List<Event>();
             _events.Add(new Event()
             {
                 Id = 1,
                 Name = "Roskilde Festival",
-                Description = "A lot of music",
+                CountryCode = "DK",
                 City = "Roskilde",
-                DateTime = new DateTime(2020, 12, 9, 10, 0, 0)
+                Description = "A lot of music",
+                DateTime = new DateTime(2021, 7, 3, 0, 0, 0)
             });
             _events.Add(new Event()
             {
                 Id = 2,
-                Name = "CPH Marahon",
-                Description = "Many Marathon runners",
-                City = "Copenhagen",
-                DateTime = new DateTime(2021, 3, 6, 9, 30, 0)
+                Name = "Paris Marathon",
+                CountryCode = "FR",
+                City = "Paris",
+                Description = "A long exercise run",
+                DateTime = new DateTime(2020, 11, 17, 0, 0, 0)
             });
-            _events.Add(new Event()
-            {
-                Id = 3,
-                Name = "CPH Distorsion",
-                Description = "A lot of beers",
-                City = "Copenhagen",
-                DateTime = new DateTime(2010, 11, 4, 14, 0, 0)
-            });
-            _events.Add(new Event()
-            {
-                Id = 4,
-                Name = "Demo Day",
-                Description = "Project Presentation",
-                City = "Roskilde",
-                DateTime = new DateTime(2020, 12, 24, 9, 0, 0)
-            });
-            _events.Add(new Event()
-            {
-                Id = 5,
-                Name = "VM Badminton",
-                Description = "Badminton",
-                City = "Århus",
-                DateTime = new DateTime(2020, 12, 30, 16, 0, 0)
-            });
+
         }
 
 
