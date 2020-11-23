@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RazorPagesEventMaker.Interfaces;
 using RazorPagesEventMaker.Models;
+using RazorPagesEventMaker.Pages.Countries;
 
 namespace RazorPagesEventMaker.Services
 {
@@ -84,6 +85,20 @@ namespace RazorPagesEventMaker.Services
                     }
                 }
             }
+        }
+
+        public List<Event> SearchEventsByCode(string code)
+        {
+            List<Event> returnlist = new List<Event>();
+            foreach (Event ev in _events)
+            {
+                if (code == ev.CountryCode)
+                {
+                    returnlist.Add(ev);
+                }
+            }
+
+            return returnlist;
         }
 
         public List<Event> GetAllEvents()

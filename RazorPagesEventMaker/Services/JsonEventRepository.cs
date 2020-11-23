@@ -66,6 +66,11 @@ namespace RazorPagesEventMaker.Services
             JsonFileWriter.WriteToJson(events, filePath);
         }
 
+        public List<Event> SearchEventsByCode(string code)
+        {
+            throw new NotImplementedException();
+        }
+
         //private string filePath = "C:\\Users\\mtyge\\OneDrive\\Documents\\SWC\\Mine Programmer\\RazorPages\\RazorPagesEventMaker\\RazorPagesEventMaker\\Services\\JsonEventRepository.cs";
         private string filePath = @"Data\jsonEvents.json";
         public List<Event> GetAllEvents()

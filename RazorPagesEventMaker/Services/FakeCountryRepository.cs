@@ -26,7 +26,15 @@ namespace RazorPagesEventMaker.Services
 
         public string GetCountryName(string code)
         {
-            throw new NotImplementedException();
+            foreach (Country c in countries)
+            {
+                if (c.Code == code)
+                {
+                    return c.Name;
+                }
+            }
+
+            return null;
         }
 
         public void AddCountry(Country country)

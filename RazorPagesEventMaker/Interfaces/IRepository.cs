@@ -12,5 +12,6 @@ namespace RazorPagesEventMaker.Interfaces
         Event GetEvents(int id);
         void AddEvent(Event ev);
         void UpdateEvent(Event evt);
+        List<Event> SearchEventsByCode(string code);
     }
 }
